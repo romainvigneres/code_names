@@ -1,0 +1,486 @@
+/* ── Loading Screen ───────────────────────────────────────── */
+
+LoadingScreen {
+    align: center middle;
+    background: #0D0D1A;
+}
+
+#loading-container {
+    width: 60;
+    height: auto;
+    background: #1A1A2E;
+    border: tall #3A3A6E;
+    padding: 3 4;
+    align: center middle;
+}
+
+#loading-title {
+    text-align: center;
+    text-style: bold;
+    color: #FFD700;
+    width: 100%;
+    margin-bottom: 2;
+}
+
+#loading-message {
+    text-align: center;
+    color: #EEEEFF;
+    text-style: italic;
+    width: 100%;
+    margin-bottom: 1;
+}
+
+#loading-sub {
+    text-align: center;
+    color: #666688;
+    width: 100%;
+}
+
+/* ── Setup Screen ─────────────────────────────────────────── */
+
+SetupScreen {
+    align: center middle;
+    background: #0D0D1A;
+}
+
+#setup-container {
+    width: 60;
+    height: auto;
+    background: #1A1A2E;
+    border: tall #3A3A6E;
+    padding: 2 4;
+    align: center middle;
+}
+
+#setup-title {
+    text-align: center;
+    text-style: bold;
+    color: #FFD700;
+    width: 100%;
+    margin-bottom: 1;
+}
+
+#setup-subtitle {
+    text-align: center;
+    color: #AAAACC;
+    width: 100%;
+    margin-bottom: 2;
+}
+
+.setup-section-label {
+    color: #CCCCEE;
+    text-style: bold;
+    margin-top: 1;
+    margin-bottom: 0;
+}
+
+.setup-row {
+    height: auto;
+    layout: horizontal;
+    align: left middle;
+    margin-bottom: 1;
+}
+
+.setup-btn {
+    margin-right: 1;
+    min-width: 16;
+}
+
+.setup-btn.selected {
+    background: #4A4ABA;
+    color: white;
+    text-style: bold;
+}
+
+#model-input {
+    width: 30;
+    margin-bottom: 1;
+}
+
+#start-btn {
+    width: 100%;
+    margin-top: 2;
+    background: #2A6A2A;
+    color: white;
+    text-style: bold;
+}
+
+#start-btn:hover {
+    background: #3A8A3A;
+}
+
+/* ── Game Screen ──────────────────────────────────────────── */
+
+GameScreen {
+    layout: vertical;
+    background: #111120;
+}
+
+#score-bar {
+    height: 3;
+    dock: top;
+    layout: horizontal;
+    background: #1E1E3A;
+    align: center middle;
+    padding: 0 2;
+    border-bottom: solid #3A3A6E;
+}
+
+#score-red {
+    color: #FF6666;
+    text-style: bold;
+    width: 1fr;
+    text-align: left;
+    content-align: left middle;
+}
+
+#score-turn {
+    color: #FFD700;
+    text-style: bold;
+    width: 2fr;
+    text-align: center;
+    content-align: center middle;
+}
+
+#score-blue {
+    color: #6666FF;
+    text-style: bold;
+    width: 1fr;
+    text-align: right;
+    content-align: right middle;
+}
+
+#main-area {
+    layout: horizontal;
+}
+
+#card-area {
+    width: 1fr;
+    padding: 1;
+    align: center middle;
+}
+
+#card-grid {
+    grid-size: 5 5;
+    grid-gutter: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/* ── Card Styles ──────────────────────────────────────────── */
+
+CardWidget {
+    height: 1fr;
+    min-height: 4;
+    width: 1fr;
+    text-style: bold;
+    border: tall #333355;
+    content-align: center middle;
+    padding: 0 1;
+}
+
+CardWidget:hover {
+    border: tall #AAAACC;
+}
+
+CardWidget:disabled {
+    opacity: 0.85;
+}
+
+.card--hidden {
+    background: #2D2D2D;
+    color: #FFFFFF;
+}
+
+.card--hidden:hover {
+    background: #3D3D3D;
+}
+
+.card--red {
+    background: #8B1A1A;
+    color: #FFFFFF;
+}
+
+.card--blue {
+    background: #1A1A8B;
+    color: #FFFFFF;
+}
+
+.card--neutral {
+    background: #7A6845;
+    color: #FFFFFF;
+}
+
+.card--assassin {
+    background: #1C1C1C;
+    color: #FFFFFF;
+}
+
+.card--spy-red {
+    background: #CC3333;
+    color: #FFFFFF;
+    border: tall #FF8888;
+}
+
+.card--spy-blue {
+    background: #3333CC;
+    color: #FFFFFF;
+    border: tall #8888FF;
+}
+
+.card--spy-neutral {
+    background: #6B5B3E;
+    color: #FFFFFF;
+    border: tall #998866;
+}
+
+.card--spy-assassin {
+    background: #333333;
+    color: #AAAAAA;
+    border: tall #666666;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────── */
+
+#sidebar {
+    width: 40;
+    background: #16162A;
+    border-left: solid #3A3A6E;
+    padding: 1;
+    layout: vertical;
+}
+
+#sidebar-title {
+    text-align: center;
+    text-style: bold;
+    color: #FFD700;
+    margin-bottom: 1;
+    width: 100%;
+}
+
+#clue-display {
+    background: #1E1E3A;
+    border: solid #3A3A6E;
+    padding: 1;
+    width: 100%;
+    height: auto;
+    min-height: 4;
+    color: #EEEEFF;
+    margin-bottom: 1;
+    text-align: center;
+    content-align: center middle;
+}
+
+#turn-label {
+    color: #CCCCEE;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1;
+}
+
+/* ── Spymaster clue input (in sidebar) ───────────────────── */
+
+#spy-input {
+    display: none;
+    background: #1A2A1A;
+    border: solid #3A6A3A;
+    padding: 1;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1;
+}
+
+#spy-input-label {
+    color: #AACCAA;
+    text-style: bold;
+    margin-bottom: 1;
+    width: 100%;
+}
+
+#clue-word {
+    width: 100%;
+    height: 3;
+    margin-bottom: 1;
+}
+
+#spy-input-row2 {
+    height: 3;
+    width: 100%;
+}
+
+#clue-number {
+    width: 8;
+    height: 3;
+    margin-right: 1;
+}
+
+#submit-clue {
+    background: #2A5A2A;
+    color: white;
+    text-style: bold;
+    width: 1fr;
+}
+
+#submit-clue:hover {
+    background: #3A7A3A;
+}
+
+GameLog {
+    height: 8;
+    border: solid #2A2A4A;
+    background: #0E0E1E;
+    padding: 0 1;
+    overflow-y: auto;
+}
+
+#log-title {
+    color: #888899;
+    text-style: bold;
+    padding: 0;
+}
+
+GameLog Label {
+    width: 100%;
+    color: #AAAACC;
+}
+
+#thinking-title {
+    color: #557755;
+    text-style: bold;
+    margin-top: 1;
+    width: 100%;
+    text-align: center;
+}
+
+ThinkingPanel {
+    height: 1fr;
+    background: #0A160A;
+    border: solid #2A4A2A;
+    width: 100%;
+}
+
+ThinkingPanel Label {
+    color: #88BB88;
+    padding: 0 1;
+    width: 100%;
+}
+
+/* ── Action Bar ───────────────────────────────────────────── */
+
+#action-bar {
+    height: 5;
+    dock: bottom;
+    background: #1A1A2E;
+    border-top: solid #3A3A6E;
+    padding: 0 2;
+    layout: horizontal;
+    align: left middle;
+}
+
+#action-switcher {
+    width: 1fr;
+    height: 5;
+}
+
+#status-area,
+#guess-controls-area {
+    layout: horizontal;
+    align: left middle;
+    height: 5;
+    width: 1fr;
+}
+
+#end-turn {
+    background: #5A3A1A;
+    color: white;
+    text-style: bold;
+    min-width: 16;
+    margin-right: 2;
+}
+
+#end-turn:hover {
+    background: #7A5A2A;
+}
+
+#guess-instruction {
+    color: #CCCCEE;
+    content-align: left middle;
+    height: 100%;
+}
+
+#status-area {
+    layout: horizontal;
+    align: center middle;
+    height: 100%;
+    width: 1fr;
+}
+
+#status-label {
+    color: #AAAACC;
+    text-style: italic;
+    text-align: center;
+    width: 100%;
+    content-align: center middle;
+}
+
+/* ── Game Over Modal ──────────────────────────────────────── */
+
+GameOverModal {
+    align: center middle;
+    background: #00000088;
+}
+
+#game-over-container {
+    width: 50;
+    height: auto;
+    background: #1A1A2E;
+    border: tall #FFD700;
+    padding: 3 4;
+    align: center middle;
+}
+
+#game-over-title {
+    text-align: center;
+    text-style: bold;
+    color: #FFD700;
+    width: 100%;
+    margin-bottom: 1;
+}
+
+#game-over-winner {
+    text-align: center;
+    text-style: bold;
+    width: 100%;
+    margin-bottom: 2;
+}
+
+#game-over-reason {
+    text-align: center;
+    color: #AAAACC;
+    width: 100%;
+    margin-bottom: 2;
+}
+
+.modal-btn {
+    width: 100%;
+    margin-top: 1;
+    text-style: bold;
+}
+
+#play-again-btn {
+    background: #2A6A2A;
+    color: white;
+}
+
+#play-again-btn:hover {
+    background: #3A8A3A;
+}
+
+#quit-btn {
+    background: #6A2A2A;
+    color: white;
+}
+
+#quit-btn:hover {
+    background: #8A3A3A;
+}
