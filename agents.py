@@ -11,7 +11,7 @@ import ollama
 
 from game_state import CardColor, GameState, Team
 
-DEFAULT_MODEL = "deepseek-r1:8b"
+DEFAULT_MODEL = "llama3.1:latest"
 
 SPYMASTER_MODEL = "codenames-spy"
 GUESSER_MODEL = "codenames-guesser"
